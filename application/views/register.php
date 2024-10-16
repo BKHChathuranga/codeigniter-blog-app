@@ -1,8 +1,12 @@
 <?php include 'partials/header.php'; ?>
 <div class="container">
 	<h2>Register</h2>
+	<?php if( $this->session->flashdata('msg')){
+		echo "<h3>".$this->session->flashdata('msg')."</h3>";
+	}
+	?>
 	<?php echo validation_errors(); ?>
-	<?php echo form_open('Register/RegisterUser'); ?>
+	<?php echo form_open('/Register/RegisterUser'); ?>
 
 	<div class="mb-3">
 		<label for="firstName" class="form-label">First name</label>

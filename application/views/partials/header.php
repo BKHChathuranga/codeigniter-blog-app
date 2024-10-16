@@ -19,29 +19,17 @@
 			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 				<li class="nav-item">
 					<a class="nav-link active" aria-current="page"
-					   href="<?php echo base_url('index.php/Home/index') ?>">Home</a>
+					   href="<?php echo base_url('/Home/index') ?>">Home</a>
 				</li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<li class="nav-item">
 					<a class="nav-link active" aria-current="page"
-					   href="<?php echo base_url('index.php/Home/register') ?>">Register</a>
+					   href="<?php echo base_url('/Register/RegisterUser') ?>">Register</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link active" aria-current="page"
-					   href="<?php echo base_url('index.php/Home/login') ?>">Login</a>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-					   aria-expanded="false">
-						User
-					</a>
-					<ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-left">
-						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href="#">Logout</a></li>
-							<li><a class="dropdown-item" href="#">Profile</a></li>
-						</ul>
-					</ul>
+					   href="<?php echo base_url('/Home/login') ?>">Login</a>
 				</li>
 			</ul>
 		</div>

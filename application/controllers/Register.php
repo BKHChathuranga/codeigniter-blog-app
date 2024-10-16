@@ -16,8 +16,14 @@ class Register extends CI_Controller
 			$this->load->view('register');
 		} else {
 			$this->load->model('Model_user');
-			$this->Model_user->insertUderData();
-
+			$response = $this->Model_user->insertUserData();
+			if($response){
+				$this->session->set_flashdata('msg','Registered successfully.Please Login');
+				redirect('Home/register');
+			}else {
+				$this->session->set_flashdata('msg','Something went wrong');
+				redirect('Home/register');
+			}
 		}
 	}
 }
